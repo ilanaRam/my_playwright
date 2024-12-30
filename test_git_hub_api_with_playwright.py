@@ -57,7 +57,7 @@ def create_test_repo(api_create_context: APIRequestContext)->Generator[None, Non
         "auto_init": True,  # Automatically initialize the repository with a README
     }
 
-    # post creates new resource file to repo
+    # post creates new resource file to my repo
     new_repo = api_create_context.post(url="https://api.github.com/user/repos",
                                         data=json.dumps(repo_data)) # data
     print(f"New repo name: {new_repo}, status: {new_repo.status}, status_name: {new_repo.status_text}")
