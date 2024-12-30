@@ -22,6 +22,7 @@ GIT_HUB_SITE = "https://api.github.com"
 # !!!!  In this file I will work without PLAYWRIGHT
 # I will work without creating a context (browser) !!!!
 # simply by sending REST APIs to a Github site
+# while as next step I will add a playwright
 
 def test_create_repo():
     # Repository data (replace with your repo name and settings)
